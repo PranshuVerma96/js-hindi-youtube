@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+</head>
+<body style="background-color: black; color:aliceblue">
+  
+  <ul class="language">
+
+    <li>Java</li>
+    <li>javascript</li>
+    <li>CSS</li>
+   
+  </ul>
+
+  <script>
+
+    function addLanguage(langName){
+      const li =document.createElement('li')
+      li.innerHTML =  `${langName}`
+      document.querySelector('.language').appendChild(li)
+    }
+    addLanguage('python')
+    addLanguage('typescript')
+
+    function addOptiLanguage(langName){
+      const li = document.createElement('li')
+      li.appendChild(document.createTextNode(langName))
+
+      document.querySelector('.language').appendChild(li)
+    }
+    addOptiLanguage('.net and C#')
+
+    //Edit
+    const secondLanguage = document.querySelector("li:nth-child(2)")
+
+    console.log(secondLanguage)
+
+    //secondLanguage.innerHTML = "Mojo"
+
+    const newli = document.createElement('li')
+    newli.textContent = 'Mojo'
+    
+    secondLanguage.replaceWith(newli)
+
+    //edit
+    const firstLanguage = document.querySelector('li:first-child')
+    firstLanguage.outerHTML = '<li> papa ki pari </li>'
+
+    //remove
+
+    const lastLang= document.querySelector('li:last-child')
+    lastLang.remove()
+  </script>
+</body>
+</html>
