@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body style="background-color: rgb(42, 41, 41); color:aliceblue">
+  <h2>Amazing image</h2>
+  <div>
+    <ul id="images">
+      <li> <img width="200px" src="1.jpeg" alt=" images are not loaded" id="photoshop"></li>
+      <li> <img width="200px" src="2.jpeg" alt=" images are not loaded" id="japan"></li>
+      <li> <img width="200px" src="3.jpg" alt=" images are not loaded" id="river">  </li>
+      <li> <img width="200px" src="4.jpeg" alt=" images are not loaded" id="owl"></li>
+      <li><a style="color: aliceblue;" href="https://google.com" id="google">google</a></li>
+    
+    </ul>
+  </div>
+  <script>
+
+     // type timestamp , defaultPrevented, 
+// target, toElement , srcElement, currentTarget, 
+// clientX, clientY , screenX, screenY
+// altKey, ctrlKey , shiftkey , keyCode
+
+// attachEvent() jab internet explor tha 
+// jQuery -on
+
+   /* document.getElementById('owl').onclick = function(){
+      alert('owl clicked')
+    } this apporach feature kam deta he
+document.getElementById('images').addEventListener('click' ,function(e){
+ console.log('clicked inside the ul');
+},false)
+
+document.getElementById('owl').addEventListener('click' ,function(e){
+ console.log('owl clicked');
+ e.stopPropagation()
+},false)
+
+document.getElementById('google').addEventListener('click' ,function(e){
+ 
+  e.preventDefault()
+  e.stopPropagation()
+   console.log('google clicked');
+},false)*/
+
+document.getElementById('images').addEventListener('click' , function(e){
+  console.log(e.target.parentNode);
+console.log(e.target.tagName)
+  if(e.target.tagName ==='IMG'){
+    console.log(e.target.id)
+     let removeIt = e.target.parentNode
+  removeIt.remove()
+  }
+ 
+//  removeIt.parentNode.removeChild(removeIt)
+},false)
+
+
+
+  </script>
+</body>
+</html>

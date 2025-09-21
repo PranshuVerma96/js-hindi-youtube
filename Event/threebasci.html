@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>asynchronous java script and some advance concept</title>
+</head>
+<body>
+  <h1>Chau aur code</h1>
+  <button id="start">start </button>
+  <button id="stop">stop</button>
+  
+  <script>
+   
+   /* const sayDate = function(str){
+    console.log(str , Date.now());
+  }
+  const intervaID = setInterval(sayDate,1000 , 'hi')
+
+  clearInterval(intervaID)*/
+
+  let intervaID;
+  const someQuary = ()=>{
+      console.log('papa ki pari' , 
+      Date.now());
+    };
+
+  document.querySelector('#start').addEventListener('click',()=>{
+    if(!intervaID){
+    intervaID =  setInterval(someQuary,1000)
+    }
+  });
+ 
+
+  document.querySelector('#stop').addEventListener('click',()=>{
+    clearInterval(intervaID);
+    intervaID = null
+  })
+  </script>
+</body>
+</html>
