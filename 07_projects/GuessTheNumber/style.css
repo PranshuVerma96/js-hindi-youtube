@@ -1,0 +1,31 @@
+body{
+  background-color: rgb(56, 55, 55);
+  color: wheat;
+}
+.wrapper{
+text-align: center;
+margin: 100px;
+
+}
+.guess{
+  font-size: 40px;
+  margin-left: 5px;
+}
+#guessField{
+  margin-top: 10px;
+  height: 30px;
+  width: 180px;
+  
+}
+#subt{
+ background-color: black;
+
+ color: white;
+ height: 40px;
+ width: 130px;
+ border-radius: 5px;
+ text-align: center;
+ margin-top: 15px
+
+ 
+}

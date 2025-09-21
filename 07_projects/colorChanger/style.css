@@ -1,0 +1,38 @@
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 50px;
+  background-color: bisque;
+}
+
+
+.canvas{
+ 
+display:flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+gap: 20px;
+}
+.button{
+  height: 100px;
+  width: 100px;
+ 
+  border: 2px solid;
+  border: black solid;
+  cursor: pointer;
+}
+#grey{
+  background-color: gray;
+}
+#cyan{
+ background-color: cyan;
+}
+#yellow{
+  background-color: yellow;
+}
+#blue{
+  background-color: blue;
+}

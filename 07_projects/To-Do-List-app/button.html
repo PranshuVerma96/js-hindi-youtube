@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .subscibe{
+      font-size: 23px;
+      height: 40px;
+      color: wheat;
+      width: 200px;
+      background-color: red;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .size-double{
+       height: 40px;
+      width: 400px;
+      font-size: 15px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  
+  <button class="subscibe" onclick="setTimeout(doubleTheSize,2000);">Subscibe</button>
+  <script>
+function doubleTheSize(){
+  let buttonElement = document.querySelector('.subscibe');
+  buttonElement.classList.add('size-double');
+  
+}
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+body{
+  background-color: gray;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  text-align: center;
+   font-size: 20px;
+}
+h1{
+  text-align: center;
+}
+#btn{
+cursor: pointer;
+}
+#btn:hover{
+  background-color: aqua;
+}
+.results{
+  color: aliceblue;
+  margin-top: 15px;
+  font-weight: bold;
+}
