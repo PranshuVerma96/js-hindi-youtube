@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events </title>
+</head>
+<body>
+    <h1>Pranshu verma and Javascript</h1>
+      <button id="start"> start</button>
+    <button id="stop"> stop</button>
+</body>
+
+<script>
+
+    // / the finctionality of start and stop
+    let intervalID;
+
+const changeDate = function(){
+    console.log(Date.now() , 'hi');
+}
+
+ const ChangeText= function(){
+    document.getElementById('start')
+    .addEventListener('click',function(){
+        intervalID = setInterval(changeDate,1000);
+    }
+)
+ }
+
+ ChangeText();
+
+ const stopText = function(){
+    document.getElementById('stop').addEventListener('click',function(){
+        clearInterval(intervalID);
+    })
+ }
+
+ stopText();
+
+
+// document.getElementById('start').addEventListener('click',function(
+    
+// ){
+
+// })
+// const sayDate =function(str){
+//         console.log(str ,'pranshu',Date.now());
+// }
+//     const interId = setInterval(sayDate,1000,"hi")
+
+//     clearInterval(interId);*/
+
+
+</script>
+</html>

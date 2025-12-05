@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events </title>
+</head>
+<body>
+    <h1>Pranshu verma</h1>
+    <button id="stop"> stop</button>
+</body>
+<script>
+    // const sayPranshu = function(){
+    //     console.log('Pranshu');
+        
+    // }
+
+    //setTimeout(sayPranshu, 2000); // sayPranshu is the refrence of the 
+     //sayPranshu which is passed in the setTimeOut function 
+
+    const changeText = function(){
+        document.querySelector('h1').innerHTML = "best JavaScript series"
+
+    }
+    const changeMe = setTimeout(changeText,2000 );
+
+   document.querySelector('#stop').addEventListener('click',function(){
+    console.log("stop");
+       clearTimeout(changeMe);
+    
+   })
+
+    
+</script>
+</html>
